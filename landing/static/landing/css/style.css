@@ -298,12 +298,20 @@ a{
   position: relative;
   top: -5px;
   left: -5px;
-  border: 2px solid var(--html-shadow);
+  display: flex;
+  align-items: flex-end;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.container-skill:hover{
+  top: 0;
+  left: 0;
 }
 
 .skill-title{
+  width: 100%;
   text-align: right;
-  vertical-align: top;
 }
 
 .html-shadow{
@@ -312,11 +320,114 @@ a{
 
 .html-skill{
   background-color: var(--html-bg);
+  border: 2px solid var(--html-shadow);
 }
 
 .html-title{
   color: var(--html-text);
 }
+
+.css-shadow{
+  background-color: var(--css-shadow);
+}
+
+.css-skill{
+  background-color: var(--css-bg);
+  border: 2px solid var(--css-shadow);
+}
+
+.css-title{
+  color: var(--css-text);
+}
+
+.js-shadow{
+  background-color: var(--js-shadow);
+}
+
+.js-skill{
+  background-color: var(--js-bg);
+  border: 2px solid var(--js-shadow);
+}
+
+.js-title{
+  color: var(--js-text);
+}
+
+.ts-shadow{
+  background-color: var(--ts-shadow);
+}
+
+.ts-skill{
+  background-color: var(--ts-bg);
+  border: 2px solid var(--ts-shadow);
+}
+
+.ts-title{
+  color: var(--ts-text);
+}
+
+.vite-shadow{
+  background-color: var(--vite-shadow);
+}
+
+.vite-skill{
+  background-color: var(--vite-bg);
+  border: 2px solid var(--vite-shadow);
+}
+
+.vite-title{
+  color: var(--vite-text);
+}
+
+.py-shadow{
+  background-color: var(--python-shadow);
+}
+
+.py-skill{
+  background-color: var(--python-bg);
+  border: 2px solid var(--python-shadow);
+}
+
+.py-title{
+  color: var(--python-text);
+}
+
+.dj-shadow{
+  background-color: var(--django-shadow);
+}
+
+.dj-skill{
+  background-color: var(--django-bg);
+  border: 2px solid var(--django-shadow);
+}
+
+.dj-title{
+  color: var(--django-text);
+}
+
+.git-shadow{
+  background-color: var(--git-shadow);
+}
+
+.git-skill{
+  background-color: var(--git-bg);
+  border: 2px solid var(--git-shadow);
+}
+
+.gh-shadow{
+  background-color: var(--github-shadow);
+}
+
+.gh-skill{
+  background-color: var(--github-bg);
+  border: 2px solid var(--github-shadow);
+}
+
+.gh-title{
+  color: var(--github-text);
+}
+
+
 
 /* ------------------- END SKILLS ------------------- */
   
