@@ -1,4 +1,5 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,9 +15,11 @@
       <p class="title-lp">Juserdev</p>
     </div>
   </header>
-  <div id="app">
+  <main id="app">
+
     {% block content %}
     {% endblock %}
-  </div>
+    
+  </main>
 </body>
 </html>

@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --background-color: #D3C4AC;
+  --principal-text: #2C2C54;
+  --acent-text: #9A1750;
+
+  /* Google Fonts */
+  --font-pixelify-sans: 'Pixelify Sans', sans-serif;
+  --font-press-start-2p: 'Press Start 2P', cursive;
+}
+
+/* ------------------- HEADER ------------------- */
+
+body{
+  background-color: var(--background-color);
+  background-image: url('../img/textura.png');
+  background-repeat: repeat;
+  background-size: auto;
+  background-attachment: fixed;
+  font-family: var(--font-pixelify-sans);
+  
+}
+
+.header-bar{
+  background-color: var(--background-color);
+  padding: 10px 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.title-lp{
+  font-family: var(--font-pixelify-sans);
+  -webkit-text-stroke: 2px var(--principal-text);
+  color: var(--principal-text);
+  font-size: 34px;
+  text-shadow: 2px 2px 0 var(--acent-text);
+}
+
+/* ------------------- END HEADER ------------------- */
+
+#app{
+  width: 100%;
+  padding: 150px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.container{
+  width: 510px;
+}
+
+.container-user-info{
+  display: flex;
+  gap: 16px;
+  position: relative;
+}
+
+.container-imgs{
+  background-color: var(--acent-text);
+  position: relative;
+  width: 102px;
+  height: 102px;
+  
+}
+
+.avatar{
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  border: 2px solid var(--acent-text);
+  cursor: pointer;
+  transition: top 0.2s ease, left 0.2s ease;
+}
+
+.avatar:hover{
+  top: 0;
+  left: 0;
+}
+
+.user-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.name{
+  color: var(--principal-text);
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.user{
+  color: var(--acent-text);
+  font-size: 18px;
+}
+
+.container-sm{
+  display: flex;
+  gap: 12px;
+}
+
+.sm-img{
+  width: 20px;
+  height: 20px;
+}
