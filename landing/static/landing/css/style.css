@@ -79,7 +79,7 @@ body{
   left: -5px;
   border: 2px solid var(--acent-text);
   cursor: pointer;
-  transition: top 0.2s ease, left 0.2s ease;
+  transition: top 0.1s ease, left 0.1s ease;
 }
 
 .avatar:hover{
@@ -113,3 +113,30 @@ body{
   width: 20px;
   height: 20px;
 }
+
+.container-plus{
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  padding: 25px 0;
+}
+
+.container-plus-text{
+  display: flex;
+  gap: 5px;
+}
+
+.plus-cpt{
+  color: var(--acent-text);
+  font-weight: 700;
+}
+
+.text-cpt{
+  color: var(--principal-text);
+}
+
+.description{
+  color: var(--principal-text);
+  font-weight: 400;
+}
+  
