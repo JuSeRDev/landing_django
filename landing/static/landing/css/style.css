@@ -11,6 +11,64 @@
   --principal-text: #2C2C54;
   --acent-text: #9A1750;
 
+  --titles-color: #FCB423;
+  --title-stroke: #000000;
+  --title-shadow: #37241B;
+
+  --subtitle-color: #FBE7B8;
+  --subtitle-stroke: #34241D;
+  --subtitle-shadow: #331F1A;
+
+  --welcome-card-title-color: #C7C2C2;
+  --welcome-card-description-color: #EDEDED;
+
+  
+  /* HTML */
+  --html-bg: #E34F26;
+  --html-shadow: #B7411E;
+  --html-text: #FFFFFF;
+
+  /* CSS */
+  --css-bg: #1572B6;
+  --css-shadow: #0B4F80;
+  --css-text: #FFFFFF;
+
+  /* JavaScript */
+  --js-bg: #F7DF1E;
+  --js-shadow: #C6AD00;
+  --js-text: #000000;
+
+  /* TypeScript */
+  --ts-bg: #3178C6;
+  --ts-shadow: #245A91;
+  --ts-text: #FFFFFF;
+
+  /* Vite */
+  --vite-bg: #646CFF;
+  --vite-shadow: #3C3FA3;
+  --vite-text: #FFD62E;
+
+  /* Python */
+  --python-bg: #0276BC;
+  --python-shadow: #27557D;
+  --python-text: #FEC008;
+
+  /* Django */
+  --django-bg: #092E20;
+  --django-shadow: #041A12;
+  --django-text: #FFFFFF;
+
+  /* Git */
+  --git-bg: #F05032;
+  --git-shadow: #A83823;
+  --git-text: #FFFFFF;
+
+  /* GitHub */
+  --github-bg: #181717;
+  --github-shadow: #0D0D0D;
+  --github-text: #FFFFFF;
+  
+
   /* Google Fonts */
   --font-pixelify-sans: 'Pixelify Sans', sans-serif;
   --font-press-start-2p: 'Press Start 2P', cursive;
@@ -25,7 +83,10 @@ body{
   background-size: auto;
   background-attachment: fixed;
   font-family: var(--font-pixelify-sans);
-  
+}
+
+a{
+  text-decoration: none;
 }
 
 .header-bar{
@@ -50,7 +111,7 @@ body{
 
 #app{
   width: 100%;
-  padding: 150px 0;
+  padding: 100px 0;
   display: flex;
   justify-content: center;
 }
@@ -79,7 +140,6 @@ body{
   left: -5px;
   border: 2px solid var(--acent-text);
   cursor: pointer;
-  transition: top 0.2s ease, left 0.2s ease;
 }
 
 .avatar:hover{
@@ -113,3 +173,260 @@ body{
   width: 20px;
   height: 20px;
 }
+
+.container-plus{
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  padding: 25px 0;
+}
+
+.container-plus-text{
+  display: flex;
+  gap: 5px;
+}
+
+.plus-cpt{
+  color: var(--acent-text);
+  font-weight: 700;
+}
+
+.text-cpt{
+  color: var(--principal-text);
+}
+
+.description{
+  color: var(--principal-text);
+  font-weight: 400;
+}
+
+/* ------------------- END USER INFO ------------------- */
+
+/* ------------------- WELCOME ------------------- */
+
+.container-welcome{
+  padding: 25px 0;
+}
+
+.welcome-projects{
+  padding-bottom: 15px;
+}
+
+.welcome-img, .skills-img{
+  width: 270px;
+  padding-bottom: 15px;
+}
+
+.project-img{
+  width: 60px;
+}
+
+.container-projects{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.container-project-shadow{
+  width: 100%;
+  height: 85px;
+  background-color: var(--acent-text);
+  position: relative;
+  right: -3px;
+}
+
+.container-project{
+  position: relative;
+  top: -3px;
+  left: -3px;
+  width: 100%;
+  height: 85px;
+  background-color: var(--principal-text);
+  border: 2px solid var(--acent-text);
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.container-project:hover{
+  top: 0;
+  left: 0;
+}
+
+.container-project-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.project-title{
+  color: var(--welcome-card-title-color);
+}
+
+.project-description{
+  color: var(--welcome-card-description-color);
+  font-size: 12px;
+  font-weight: 100;
+}
+
+/* ------------------- END WELCOME ------------------- */
+
+/* ------------------- SKILLS ------------------- */
+.container-my-skills{
+  padding: 25px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-skills{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.container-skill-shadow{
+  width: 80px;
+  height: 80px;
+}
+
+.container-skill{
+  width: 80px;
+  height: 80px;
+  position: relative;
+  top: -5px;
+  left: -5px;
+  display: flex;
+  align-items: flex-end;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.container-skill:hover{
+  top: 0;
+  left: 0;
+}
+
+.skill-title{
+  width: 100%;
+  text-align: right;
+}
+
+.html-shadow{
+  background-color: var(--html-shadow);
+}
+
+.html-skill{
+  background-color: var(--html-bg);
+  border: 2px solid var(--html-shadow);
+}
+
+.html-title{
+  color: var(--html-text);
+}
+
+.css-shadow{
+  background-color: var(--css-shadow);
+}
+
+.css-skill{
+  background-color: var(--css-bg);
+  border: 2px solid var(--css-shadow);
+}
+
+.css-title{
+  color: var(--css-text);
+}
+
+.js-shadow{
+  background-color: var(--js-shadow);
+}
+
+.js-skill{
+  background-color: var(--js-bg);
+  border: 2px solid var(--js-shadow);
+}
+
+.js-title{
+  color: var(--js-text);
+}
+
+.ts-shadow{
+  background-color: var(--ts-shadow);
+}
+
+.ts-skill{
+  background-color: var(--ts-bg);
+  border: 2px solid var(--ts-shadow);
+}
+
+.ts-title{
+  color: var(--ts-text);
+}
+
+.vite-shadow{
+  background-color: var(--vite-shadow);
+}
+
+.vite-skill{
+  background-color: var(--vite-bg);
+  border: 2px solid var(--vite-shadow);
+}
+
+.vite-title{
+  color: var(--vite-text);
+}
+
+.py-shadow{
+  background-color: var(--python-shadow);
+}
+
+.py-skill{
+  background-color: var(--python-bg);
+  border: 2px solid var(--python-shadow);
+}
+
+.py-title{
+  color: var(--python-text);
+}
+
+.dj-shadow{
+  background-color: var(--django-shadow);
+}
+
+.dj-skill{
+  background-color: var(--django-bg);
+  border: 2px solid var(--django-shadow);
+}
+
+.dj-title{
+  color: var(--django-text);
+}
+
+.git-shadow{
+  background-color: var(--git-shadow);
+}
+
+.git-skill{
+  background-color: var(--git-bg);
+  border: 2px solid var(--git-shadow);
+}
+
+.gh-shadow{
+  background-color: var(--github-shadow);
+}
+
+.gh-skill{
+  background-color: var(--github-bg);
+  border: 2px solid var(--github-shadow);
+}
+
+.gh-title{
+  color: var(--github-text);
+}
+
+
+/* ------------------- END SKILLS ------------------- */
+  
