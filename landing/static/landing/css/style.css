@@ -459,3 +459,48 @@ p.skills-message{
 
 
 /* ------------------- END FORMACION ------------------- */
+
+/* ------------------- FOOTER ------------------- */
+
+footer{
+  padding: 50px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-footer{
+  width: 70px;
+  border: 1px solid var(--acent-text);
+  margin-bottom: 10px;
+}
+
+.line-one{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.copy{
+  color: var(--principal-text);
+  font-family: var(--font-press-start-2p);
+}
+
+.line-footer-text{
+  color: var(--principal-text);
+}
+
+span{
+  color: var(--acent-text);
+  font-weight: 600;
+}
+
+.gh-logo-footer{
+  width: 20px;
+  margin-top: 10px;
+}
+
+
+/* ------------------- END FOOTER ------------------- */
