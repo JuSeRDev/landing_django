@@ -7,50 +7,6 @@
   
    {# container user info #}
 
-  <div class="container-user-info">
-    <div class="container-imgs">
-
-      <div class="img">
-        <img src="{% static 'landing/img/avatar.png' %}" alt="avatar" class="avatar">
-      </div>
-    </div>
-
-    <div class="user-info">
-      
-      <div class="user-text">
-        <p class="name">JuanSe Rodriguez</p>
-        <p class="user">@juserdev</p>
-      </div>
-      <div class="container-sm">
-        <a href="#" ><img class="sm-img" src="{% static 'landing/img/github_logo.png' %}" alt="github" target="_blank" rel="noopener noreferrer"></a>
-        <a href="#" ><img class="sm-img" src="{% static '/landing/img/x_logo.png' %}" alt="x" target="_blank" rel="noopener noreferrer"></a>
-        <a href="#" ><img class="sm-img" src="{% static 'landing/img/ig_logo.png' %}" alt="instagram" target="_blank" rel="noopener noreferrer"></a>
-        <a href="#" ><img class="sm-img" src="{% static 'landing/img/tiktok_logo.png' %}" alt="tiktok" target="_blank" rel="noopener noreferrer"></a>
-        <a href="#" ><img class="sm-img" src="{% static 'landing/img/fb_logo.png' %}" alt="facebook" target="_blank" rel="noopener noreferrer"></a>
-        <a href="#" ><img class="sm-img" src="{% static 'landing/img/linkedin_logo.png' %}" alt="linkedin" target="_blank" rel="noopener noreferrer"></a>
-      </div>
-
-    </div>
-
-  </div>
-
-  
-
-  <div class="container-plus">
-    <div class="container-plus-text">
-      <p class="plus-cpt">+3</p>
-      <p class="text-cpt">Años desarrollando</p>
-    </div>
-    <div class="container-plus-text">
-      <p class="plus-cpt">+10</p>
-      <p class="text-cpt">Proyectos creados</p>
-    </div>
-    <div class="container-plus-text">
-      <p class="plus-cpt">+100</p>
-      <p class="text-cpt">Puntos de motivación</p>
-    </div>
-  </div>
-
   <p class="description">Soy programador frontend en formación con experiencia en desarrollo web y conocimientos en backend. Actualmente trabajo con HTML, CSS, JavaScript, TypeScript, Vite, Python y Django. Aquí podrás conocer más sobre mis proyectos.</p>
 
   {# end container user info #}
@@ -58,12 +14,15 @@
   {# container welcome #}
   
   <div class="container-welcome">
-    
-    <img src="{% static 'landing/img/BIENVENIDOS.png'%}" alt="BIENVENIDOS" class="welcome-img">
+
+    <div class="menu-info">
+      <h1 class="menu-titles">BIENVENIDOS</h1>
+      <p class="menu-subtitle">Aqui estan mis proyectos.</p>
+    </div>
 
     <div class="container-projects">
 
-      <a href="#" target="_blank" rel="noopener noreferrer">
+      <a href="{% url 'gestor' %}">
         <div class="container-project-shadow">
           <div class="container-project">
             <img src="{% static 'landing/img/cotizador_web_logo.png' %}" alt="cotizador web" class="project-img">
@@ -121,7 +80,10 @@
 
   <div class="container-my-skills">
 
-    <img src="{% static 'landing/img/skills.png' %}" alt="skills-img" class="skills-img">
+    <div class="menu-info">
+      <h1 class="menu-titles">MIS SKILLS</h1>
+      <p class="menu-subtitle">Lenguajes y herramientas.</p>
+    </div>
 
     <div class="container-skills">
       <div class="container-skill-shadow html-shadow">
@@ -182,7 +144,10 @@
   
   <div class="container-formation-academy">
     
-    <img src="{% static 'landing/img/formacion.png' %}" alt="formacion-img" class="img-formations">
+    <div class="menu-info">
+      <h1 class="menu-titles">FORMACIÓN</h1>
+      <p class="menu-subtitle">Trayectoria académica.</p>
+    </div>
     
     <div class="container-formations">
       <a href="https://ademass.com/" target="_blank">
@@ -196,7 +161,7 @@
           </div>
         </div>
       </a>
-      <a href="https://www.youtube.com/@mouredev" target="_blank">
+      <a href="https://www.youtube.com/@mouredev" target="_blank" rel="noopener noreferrer">
         <div class="container-formation-shadow">
           <div class="container-formation">
             <img src="{% static 'landing/img/youtube_logo.png' %}" alt="youtube_logo" class="img-formation">
@@ -226,7 +191,12 @@
   {# container contact #}
 
   <div class="container-contact-info">
-    <img src="{% static 'landing/img/contacto.png' %}" alt="contacto" class="img-contacts">
+
+    <div class="menu-info">
+      <h1 class="menu-titles">CONTACTO</h1>
+      <p class="menu-subtitle">Tengo disponibilidad inmediata.</p>
+    </div>
+
     <div class="container-contacts">
       <a href="mailto: juserdev@gmail.com">
         <div class="container-contact-shadow">
@@ -254,18 +224,6 @@
   </div>
 
   {#  end container contact #}
-
-  <!-- <div class="footer">
-    <img src="{% static 'landing/img/avatar.png' %}" alt="avatar" class="logo-footer">
-    <div class="line-one">
-      <p class="copy">©</p>
-      <p class="line-footer-text">2022-2025 <span>JuserDev</span> by <span>Sebastian Rodriguez</span> v1.</p>
-    </div>
-    <p class="line-footer-text">Building websites and digital experiences from Colombia</p>
-    <a href="https://github.com/juserdev" target="_blank" rel="noopener noreferrer">
-      <img src="{% static 'landing/img/github_logo.png' %}" alt="gh-logo" class="gh-logo-footer">
-    </a>
-  </div> -->
 
 </div>
 

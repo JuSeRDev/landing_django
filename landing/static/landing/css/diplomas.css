@@ -1,3 +1,7 @@
+.container-diplomas-info{
+  padding-top: 20px ;
+}
+
 .container-diplomas{
   width: 510px;
 }
@@ -37,9 +41,10 @@
   padding: 0;
   width: 100%;
   border: none;
-  max-height: 0;
+  max-height: 400px;
   overflow: hidden;
-  transition: max-height 0.3s ease;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
 }
 
 .dv-active{
@@ -52,6 +57,7 @@
   border: 5px solid var(--acent-text);
   max-height: 400px;
   overflow: visible;
+  opacity: 1;
 }
 
 

@@ -8,6 +8,7 @@
   <link rel="icon" type="image/png" href="{% static 'landing/img/favicon.png' %}">
   <link rel="stylesheet" href="{% static 'landing/css/style.css' %}">
   <link rel="stylesheet" href="{% static 'landing/css/diplomas.css' %}">
+  <link rel="stylesheet" href="{% static 'landing/css/gestor.css' %}">
   <title>JuserDev</title>
 </head>
 <body>
@@ -15,6 +16,46 @@
     <div class="header-bar">
       <a href="{% url 'home' %}"><img src="{% static 'landing/img/juserdev.png' %}" alt="juserdev-logo" class="juserdev-logo"></a>
     </div>
+
+    <div class="container-user">
+      <div class="container-user-info">
+        <div class="container-imgs">
+          <div class="img">
+            <img src="{% static 'landing/img/avatar.png' %}" alt="avatar" class="avatar">
+          </div>
+        </div>
+        <div class="user-info">
+      
+          <div class="user-text">
+            <p class="name">JuanSe Rodriguez</p>
+            <p class="user">@juserdev</p>
+          </div>
+          <div class="container-sm">
+            <a href="#" ><img class="sm-img" src="{% static 'landing/img/github_logo.png' %}" alt="github" target="_blank" rel="noopener noreferrer"></a>
+            <a href="#" ><img class="sm-img" src="{% static '/landing/img/x_logo.png' %}" alt="x" target="_blank" rel="noopener noreferrer"></a>
+            <a href="#" ><img class="sm-img" src="{% static 'landing/img/ig_logo.png' %}" alt="instagram" target="_blank" rel="noopener noreferrer"></a>
+            <a href="#" ><img class="sm-img" src="{% static 'landing/img/tiktok_logo.png' %}" alt="tiktok" target="_blank" rel="noopener noreferrer"></a>
+            <a href="#" ><img class="sm-img" src="{% static 'landing/img/fb_logo.png' %}" alt="facebook" target="_blank" rel="noopener noreferrer"></a>
+            <a href="#" ><img class="sm-img" src="{% static 'landing/img/linkedin_logo.png' %}" alt="linkedin" target="_blank" rel="noopener noreferrer"></a>
+          </div>
+        </div>
+      </div>
+      <div class="container-plus">
+        <div class="container-plus-text">
+          <p class="plus-cpt">+3</p>
+          <p class="text-cpt">Años desarrollando</p>
+        </div>
+        <div class="container-plus-text">
+          <p class="plus-cpt">+10</p>
+          <p class="text-cpt">Proyectos creados</p>
+        </div>
+        <div class="container-plus-text">
+          <p class="plus-cpt">+100</p>
+          <p class="text-cpt">Puntos de motivación</p>
+        </div>
+      </div>
+    </div>
+    
   </header>
   <main id="app">
 

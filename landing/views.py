@@ -7,3 +7,6 @@ def home(request):
 
 def diploma(request):
   return render(request, 'landing/diploma.html')
+
+def gestor(request):
+  return render(request, 'landing/gestor.html')
