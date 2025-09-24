@@ -1,0 +1,57 @@
+.container-diplomas{
+  width: 510px;
+}
+
+.diplomas_img{
+  width: 400px;
+}
+
+.diplomas-text{
+  padding: 20px 0;
+  color: var(--principal-text);
+}
+
+.container-diploma{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.shadow-diploma{
+  width: 100%;
+  height: 50px;
+}
+
+.skill-diploma{
+  width: 100%;
+  height: 50px;
+}
+
+.diplomas-div{
+  width: 100%;
+  max-height: 0;
+  transition: max-height 0.3s ease;
+} 
+
+.diploma{
+  padding: 0;
+  width: 100%;
+  border: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.dv-active{
+  max-height: 400px;
+  margin-bottom: 15px;
+}
+
+.active{
+  width: 100%;
+  border: 5px solid var(--acent-text);
+  max-height: 400px;
+  overflow: visible;
+}
+
+

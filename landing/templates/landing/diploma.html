@@ -3,6 +3,81 @@
 
 {% block content %}
 
-<p>hola diplomas</p>
+<div class="container-diplomas">
+  <img src="{% static 'landing/img/diplomas.png' %}" alt="diplomas" class="diplomas_img">
+
+  <p class="diplomas-text">A lo largo de mi formación he obtenido diferentes diplomas y certificaciones que reflejan mi dedicación al aprendizaje y mi compromiso con el crecimiento profesional. Cada uno de estos logros representa un paso importante en mi camino, y juntos avalan las habilidades y conocimientos que pongo en práctica en cada proyecto.</p>
+  
+  <div class="container-diplomas-info">
+    <div class="container-diploma">
+      <div class="container-skill-shadow html-shadow shadow-diploma">
+        <div class="container-skill html-skill skill-diploma">
+          <p class="skill-title html-title title-diploma">HTML</p>
+        </div>
+      </div>
+      <div class="diplomas-div">
+        <img src="{% static 'landing/img/diplomas/diploma_html5.jpg' %}" alt="diploma_html5"class="diploma">
+      </div>
+    </div>
+
+    <div class="container-diploma">
+      <div class="container-skill-shadow css-shadow shadow-diploma">
+        <div class="container-skill css-skill skill-diploma">
+          <p class="skill-title css-title title-diploma">CSS</p>
+        </div>
+      </div>
+      <div class="diplomas-div">
+        <img src="{% static 'landing/img/diplomas/diploma_css3.jpg' %}" alt="diploma_css3"class="diploma">
+      </div>      
+    </div>
+
+    <div class="container-diploma">
+      <div class="container-skill-shadow js-shadow shadow-diploma">
+        <div class="container-skill js-skill skill-diploma">
+          <p class="skill-title js-title title-diploma">JS</p>
+        </div>
+      </div>
+      <div class="diplomas-div">
+        <img src="{% static 'landing/img/diplomas/diploma_javascript.jpg' %}" alt="diploma_js"class="diploma">
+      </div>
+    </div>
+
+    <div class="container-diploma">
+      <div class="container-skill-shadow ts-shadow shadow-diploma">
+        <div class="container-skill ts-skill skill-diploma">
+          <p class="skill-title ts-title title-diploma">TS</p>
+        </div>
+      </div>
+      <div class="diplomas-div">
+        <img src="{% static 'landing/img/diplomas/diploma_typescript.jpg' %}" alt="diploma_type"class="diploma">
+      </div>
+    </div>
+
+    <div class="container-diploma">
+      <div class="container-skill-shadow py-shadow shadow-diploma">
+        <div class="container-skill py-skill skill-diploma">
+          <p class="skill-title py-title title-diploma">PYTHON</p>
+        </div>
+      </div>
+      <div class="diplomas-div">
+        <img src="{% static 'landing/img/diplomas/diploma_python.jpg' %}" alt="diploma_python"class="diploma">
+      </div>
+    </div>
+
+    <div class="container-diploma">
+      <div class="container-skill-shadow git-shadow shadow-diploma">
+        <div class="container-skill git-skill skill-diploma">
+          <p class="skill-title git-title title-diploma">GIT Y GITHUB</p>
+        </div>
+      </div>
+      <div class="diplomas-div">
+        <img src="{% static 'landing/img/diplomas/diploma_git_y_github.jpg' %}" alt="diploma_git"class="diploma">
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
 
 {% endblock %}

@@ -7,12 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="{% static 'landing/img/favicon.png' %}">
   <link rel="stylesheet" href="{% static 'landing/css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'landing/css/diplomas.css' %}">
   <title>JuserDev</title>
 </head>
 <body>
   <header>
     <div class="header-bar">
-      <img src="{% static 'landing/img/juserdev.png' %}" alt="juserdev-logo" class="juserdev-logo">
+      <a href="{% url 'home' %}"><img src="{% static 'landing/img/juserdev.png' %}" alt="juserdev-logo" class="juserdev-logo"></a>
     </div>
   </header>
   <main id="app">
@@ -21,5 +22,17 @@
     {% endblock %}
     
   </main>
+  <footer class="footer">
+    <img src="{% static 'landing/img/avatar.png' %}" alt="avatar" class="logo-footer">
+    <div class="line-one">
+      <p class="copy">©</p>
+      <p class="line-footer-text">2022-2025 <span>JuserDev</span> by <span>Sebastian Rodriguez</span> v1.</p>
+    </div>
+    <p class="line-footer-text">Building websites and digital experiences from Colombia</p>
+    <a href="https://github.com/juserdev" target="_blank" rel="noopener noreferrer">
+      <img src="{% static 'landing/img/github_logo.png' %}" alt="gh-logo" class="gh-logo-footer">
+    </a>
+  </footer>
+  <script src="{% static 'landing/js/diploma.js' %}"></script>
 </body>
 </html>
