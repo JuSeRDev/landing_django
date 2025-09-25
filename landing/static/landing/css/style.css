@@ -107,8 +107,17 @@ a{
   border-bottom: 1px dotted var(--background-texture-color);
 }
 
-.juserdev-logo{
-  width: 150px;
+.juserdev-title {
+  color: var(--principal-text, #2C2C54);
+  text-shadow:
+    1px 0 var(--acent-text, #9A1750),
+    -1px 0 var(--acent-text, #9A1750),
+    0 1px var(--acent-text, #9A1750),
+    0 -1px var(--acent-text, #9A1750),
+    1px 1px var(--acent-text, #9A1750),
+    -1px -1px var(--acent-text, #9A1750),
+    1px -1px var(--acent-text, #9A1750),
+    -1px 1px var(--acent-text, #9A1750);
 }
 
 .container-user{
