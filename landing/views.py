@@ -10,3 +10,6 @@ def diploma(request):
 
 def gestor(request):
   return render(request, 'landing/gestor.html')
+
+def cv(request):
+  return render(request, 'landing/cv.html')
