@@ -7,50 +7,6 @@
   
    {# container user info #}
 
-  <div class="container-user-info">
-    <div class="container-imgs">
-
-      <div class="img">
-        <img src="../../static/landing/img/avatar.png" alt="avatar" class="avatar">
-      </div>
-    </div>
-
-    <div class="user-info">
-      
-      <div class="user-text">
-        <p class="name">JuanSe Rodriguez</p>
-        <p class="user">@juserdev</p>
-      </div>
-      <div class="container-sm">
-        <a href="#" ><img class="sm-img" src="../../static/landing/img/github_logo.png" alt="github"></a>
-        <a href="#" ><img class="sm-img" src="../../static/landing/img/x_logo.png" alt="x"></a>
-        <a href="#" ><img class="sm-img" src="../../static/landing/img/ig_logo.png" alt="instagram"></a>
-        <a href="#" ><img class="sm-img" src="../../static/landing/img/tiktok_logo.png" alt="tiktok"></a>
-        <a href="#" ><img class="sm-img" src="../../static/landing/img/fb_logo.png" alt="facebook"></a>
-        <a href="#" ><img class="sm-img" src="../../static/landing/img/linkedin_logo.png" alt="linkedin"></a>
-      </div>
-
-    </div>
-
-  </div>
-
-  
-
-  <div class="container-plus">
-    <div class="container-plus-text">
-      <p class="plus-cpt">+3</p>
-      <p class="text-cpt">Años desarrollando</p>
-    </div>
-    <div class="container-plus-text">
-      <p class="plus-cpt">+10</p>
-      <p class="text-cpt">Proyectos creados</p>
-    </div>
-    <div class="container-plus-text">
-      <p class="plus-cpt">+100</p>
-      <p class="text-cpt">Puntos de motivación</p>
-    </div>
-  </div>
-
   <p class="description">Soy programador frontend en formación con experiencia en desarrollo web y conocimientos en backend. Actualmente trabajo con HTML, CSS, JavaScript, TypeScript, Vite, Python y Django. Aquí podrás conocer más sobre mis proyectos.</p>
 
   {# end container user info #}
@@ -58,15 +14,18 @@
   {# container welcome #}
   
   <div class="container-welcome">
-    
-    <img src="../../static/landing/img/BIENVENIDOS.png" alt="BIENVENIDOS" class="welcome-img">
+
+    <div class="menu-info">
+      <h1 class="menu-titles">BIENVENIDOS</h1>
+      <p class="menu-subtitle">Aqui estan mis proyectos.</p>
+    </div>
 
     <div class="container-projects">
 
-      <a href="#">
+      <a href="{% url 'gestor' %}">
         <div class="container-project-shadow">
           <div class="container-project">
-            <img src="../../static/landing/img/cotizador_web_logo.png" alt="cotizador web" class="project-img">
+            <img src="{% static 'landing/img/cotizador_web_logo.png' %}" alt="cotizador web" class="project-img">
             <div class="container-project-text">
               <p class="project-title">Gestor de Cotizaciones Web</p>
               <p class="project-description">Administra clientes, productos y cotizaciones con acceso privado y enlaces públicos.</p>
@@ -75,10 +34,10 @@
         </div>
       </a>
       
-      <a href="#">
+      <a href="https://juserdev.github.io/trusk/" target="_blank" rel="noopener noreferrer">
         <div class="container-project-shadow">
           <div class="container-project">
-            <img src="../../static/landing/img/trusk_logo.png" alt="trusk" class="project-img">
+            <img src="{% static 'landing/img/trusk_logo.png' %}" alt="trusk" class="project-img">
             <div class="container-project-text">
               <p class="project-title">Trusk - Memecoin</p>
               <p class="project-description">Landing page multi-idioma para una memecoin inspirada en una historia ficticia donde Donald Trump y Elon Musk son los superheroes.</p>
@@ -87,10 +46,10 @@
         </div>
       </a>
 
-      <a href="#">
+      <a href="https://juserdev.github.io/Personal-landing-page/" target="_blank" rel="noopener noreferrer">
         <div class="container-project-shadow">
           <div class="container-project">
-            <img src="../../static/landing/img/retos_frotend_logo.jpg" alt="retos frontend" class="project-img">
+            <img src="{% static 'landing/img/retos_frotend_logo.jpg' %}" alt="retos frontend" class="project-img">
             <div class="container-project-text">
               <p class="project-title">Retos Frontend</p>
               <p class="project-description">Landing con los retos de Frontend Mentor que realizo para practicar y mostrar mis habilidades.</p>
@@ -99,10 +58,10 @@
         </div>
       </a>
 
-      <a href="#">
+      <a href="#" target="_blank" rel="noopener noreferrer">
         <div class="container-project-shadow">
           <div class="container-project">
-            <img src="../../static/landing/img/curriculum_vitae_logo.jpg" alt="curriculum vitae" class="project-img">
+            <img src="{% static 'landing/img/curriculum_vitae_logo.jpg' %}" alt="curriculum vitae" class="project-img">
             <div class="container-project-text">
               <p class="project-title">Curriculum Vitae</p>
               <p class="project-description">Mi experiencia y formación resumida en un solo lugar enfocado a la programacion y el desarrollo web.</p>
@@ -121,7 +80,10 @@
 
   <div class="container-my-skills">
 
-    <img src="../../static/landing/img/skills.png" alt="skills-img" class="skills-img">
+    <div class="menu-info">
+      <h1 class="menu-titles">MIS SKILLS</h1>
+      <p class="menu-subtitle">Lenguajes y herramientas.</p>
+    </div>
 
     <div class="container-skills">
       <div class="container-skill-shadow html-shadow">
@@ -170,10 +132,98 @@
         </div>
       </div>
     </div>
+
+    <p class="skills-message">Me motiva aprender y perfeccionar mis habilidades</p>
     
   </div>
   
   {# end container skills #}
+
+  {# container formacion #}
+
+  
+  <div class="container-formation-academy">
+    
+    <div class="menu-info">
+      <h1 class="menu-titles">FORMACIÓN</h1>
+      <p class="menu-subtitle">Trayectoria académica.</p>
+    </div>
+    
+    <div class="container-formations">
+      <a href="https://ademass.com/" target="_blank">
+        <div class="container-formation-shadow">
+          <div class="container-formation">
+            <img src="{% static 'landing/img/ademass_logo.jpg' %}" alt="Ademass_logo" class="img-formation">
+              <div class="container-formation-text">
+                <p class="formation-title">Ademass</p>
+                <p class="formation-text">Ademass es una comunidad de desarrolladores que ofrece formación de calidad, certificaciones entre otras cosas.</p>
+              </div>
+          </div>
+        </div>
+      </a>
+      <a href="https://www.youtube.com/@mouredev" target="_blank" rel="noopener noreferrer">
+        <div class="container-formation-shadow">
+          <div class="container-formation">
+            <img src="{% static 'landing/img/youtube_logo.png' %}" alt="youtube_logo" class="img-formation">
+              <div class="container-formation-text">
+                <p class="formation-title">Youtube</p>
+                <p class="formation-text">Aprendo desarrollo web y programación siguiendo a creadores como MoureDev, Midudev y otros expertos de la comunidad.</p>
+              </div>
+          </div>
+        </div>
+      </a>
+      <a href="{% url 'diploma' %}">
+        <div class="container-formation-shadow">
+          <div class="container-formation">
+            <img src="{% static '/landing/img/diplomas_logo.jpg' %}" alt="diplomas_logo" class="img-formation">
+              <div class="container-formation-text">
+                <p class="formation-title">Diplomas</p>
+                <p class="formation-text">Reconocimientos y certificaciones que avalan mi aprendizaje y desarrollo profesional.</p>
+              </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  {# end container formacion #}
+
+  {# container contact #}
+
+  <div class="container-contact-info">
+
+    <div class="menu-info">
+      <h1 class="menu-titles">CONTACTO</h1>
+      <p class="menu-subtitle">Tengo disponibilidad inmediata.</p>
+    </div>
+
+    <div class="container-contacts">
+      <a href="mailto: juserdev@gmail.com">
+        <div class="container-contact-shadow">
+          <div class="container-contact">
+            <img src="{% static 'landing/img/mail_logo.jpg' %}" alt="mail_logo" class="img-contact">
+            <div class="container-contact-text">
+              <p class="contact-title">Mail</p>
+              <p class="contact-description">juserdev@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="https://discord.com/users/1290009732592959640" target="_blank"  rel="noopener noreferrer">
+        <div class="container-contact-shadow">
+          <div class="container-contact">
+            <img src="{% static 'landing/img/discord_logo.jpg' %}" alt="discord_logo" class="img-contact">
+            <div class="container-contact-text">
+              <p class="contact-title">Discord</p>
+              <p class="contact-description">@juserdev</p>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  {#  end container contact #}
 
 </div>
 

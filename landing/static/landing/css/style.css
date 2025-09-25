@@ -8,6 +8,10 @@
 
 :root{
   --background-color: #D3C4AC;
+  --background-color-transparent: #d3c4acbd;
+
+  --background-texture-color: #BDB2A2;
+
   --principal-text: #2C2C54;
   --acent-text: #9A1750;
 
@@ -91,29 +95,68 @@ a{
 
 .header-bar{
   background-color: var(--background-color);
-  padding: 10px 50px;
+  /* background-color: var(--background-color-transparent);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px); */
+  padding: 11px 50px;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1;
+  border-bottom: 1px dotted var(--background-texture-color);
 }
 
-.title-lp{
-  font-family: var(--font-pixelify-sans);
-  -webkit-text-stroke: 2px var(--principal-text);
-  color: var(--principal-text);
-  font-size: 34px;
-  text-shadow: 2px 2px 0 var(--acent-text);
+.juserdev-logo{
+  width: 150px;
+}
+
+.container-user{
+  padding: 100px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ------------------- END HEADER ------------------- */
 
 #app{
   width: 100%;
-  padding: 100px 0;
+  padding-bottom: 30px;
   display: flex;
   justify-content: center;
+}
+
+.menu-info{
+  padding-bottom: 25px;
+}
+  
+
+.menu-titles {
+  color: var(--titles-color);
+  text-shadow:
+    2px 0 var(--title-stroke),
+    -2px 0 var(--title-stroke),
+    0 2px var(--title-stroke),
+    0 -2px var(--title-stroke),
+    2px 2px var(--title-stroke),
+    -2px -2px var(--title-stroke),
+    2px -2px var(--title-stroke),
+    -2px 2px var(--title-stroke);
+}
+
+.menu-subtitle {
+  color: var(--subtitle-color);
+  text-shadow:
+    1px 0 var(--subtitle-stroke),
+    -1px 0 var(--subtitle-stroke),
+    0 1px var(--subtitle-stroke),
+    0 -1px var(--subtitle-stroke),
+    1px 1px var(--subtitle-stroke),
+    -1px -1px var(--subtitle-stroke),
+    1px -1px var(--subtitle-stroke),
+    -1px 1px var(--subtitle-stroke);
 }
 
 .container{
@@ -124,6 +167,7 @@ a{
   display: flex;
   gap: 16px;
   position: relative;
+  width: 510px;
 }
 
 .container-imgs{
@@ -176,6 +220,7 @@ a{
 
 .container-plus{
   display: flex;
+  width: 510px;
   justify-content: space-between;
   font-size: 12px;
   padding: 25px 0;
@@ -204,31 +249,41 @@ a{
 
 /* ------------------- WELCOME ------------------- */
 
-.container-welcome{
+.container-welcome, .container-formation-academy, .container-contact-info{
   padding: 25px 0;
 }
 
-.welcome-projects{
+.container-contact-info{
+  padding-top: 0;
+}
+
+.welcome-projects, .container-formation{
   padding-bottom: 15px;
 }
 
-.welcome-img, .skills-img{
+.welcome-img, .skills-img, .img-formations{
   width: 270px;
   padding-bottom: 15px;
 }
 
-.project-img{
+.img-contacts{
+  width: 300px;
+  padding-bottom: 15px;
+}
+
+.project-img, .img-formation, .img-contact{
   width: 60px;
 }
 
-.container-projects{
+.container-projects, .container-formations, .container-contacts{
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   gap: 15px;
 }
 
-.container-project-shadow{
+
+.container-project-shadow, .container-formation-shadow, .container-contact-shadow{
   width: 100%;
   height: 85px;
   background-color: var(--acent-text);
@@ -236,7 +291,11 @@ a{
   right: -3px;
 }
 
-.container-project{
+.container-contact-shadow{
+  width: 250px;
+}
+
+.container-project, .container-formation, .container-contact{
   position: relative;
   top: -3px;
   left: -3px;
@@ -250,22 +309,22 @@ a{
   cursor: pointer;
 }
 
-.container-project:hover{
+.container-project:hover, .container-formation:hover, .container-contact:hover{
   top: 0;
   left: 0;
 }
 
-.container-project-text{
+.container-project-text, .container-formation-text, .container-contact-text{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
-.project-title{
+.project-title, .formation-title, .contact-title{
   color: var(--welcome-card-title-color);
 }
 
-.project-description{
+.project-description, .formation-text, .contact-description{
   color: var(--welcome-card-description-color);
   font-size: 12px;
   font-weight: 100;
@@ -275,7 +334,6 @@ a{
 
 /* ------------------- SKILLS ------------------- */
 .container-my-skills{
-  padding: 25px 0;
   display: flex;
   flex-direction: column;
 }
@@ -285,6 +343,7 @@ a{
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 20px;
+  padding-bottom: 15px;
 }
 
 .container-skill-shadow{
@@ -427,6 +486,67 @@ a{
   color: var(--github-text);
 }
 
+p.skills-message{
+  color: var(--principal-text);
+}
 
 /* ------------------- END SKILLS ------------------- */
-  
+
+/* ------------------- FORMACION ------------------- */
+
+.container-contacts{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.container-contact{
+  width: 100%;
+}
+
+
+/* ------------------- END FORMACION ------------------- */
+
+/* ------------------- FOOTER ------------------- */
+
+footer{
+  padding-bottom: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-footer{
+  width: 70px;
+  border: 1px solid var(--acent-text);
+  margin-bottom: 10px;
+}
+
+.line-one{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.copy{
+  color: var(--principal-text);
+  font-family: var(--font-press-start-2p);
+}
+
+.line-footer-text{
+  color: var(--principal-text);
+}
+
+span{
+  color: var(--acent-text);
+  font-weight: 600;
+}
+
+.gh-logo-footer{
+  width: 20px;
+  margin-top: 10px;
+}
+
+
+/* ------------------- END FOOTER ------------------- */

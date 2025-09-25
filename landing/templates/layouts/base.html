@@ -7,13 +7,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="{% static 'landing/img/favicon.png' %}">
   <link rel="stylesheet" href="{% static 'landing/css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'landing/css/diplomas.css' %}">
+  <link rel="stylesheet" href="{% static 'landing/css/gestor.css' %}">
   <title>JuserDev</title>
 </head>
 <body>
   <header>
     <div class="header-bar">
-      <p class="title-lp">Juserdev</p>
+      <a href="{% url 'home' %}"><img src="{% static 'landing/img/juserdev.png' %}" alt="juserdev-logo" class="juserdev-logo"></a>
     </div>
+
+    <div class="container-user">
+      <div class="container-user-info">
+        <div class="container-imgs">
+          <div class="img">
+            <img src="{% static 'landing/img/avatar.png' %}" alt="avatar" class="avatar">
+          </div>
+        </div>
+        <div class="user-info">
+      
+          <div class="user-text">
+            <p class="name">JuanSe Rodriguez</p>
+            <p class="user">@juserdev</p>
+          </div>
+          <div class="container-sm">
+            <a href="#" ><img class="sm-img" src="{% static 'landing/img/github_logo.png' %}" alt="github" target="_blank" rel="noopener noreferrer"></a>
+            <a href="#" ><img class="sm-img" src="{% static '/landing/img/x_logo.png' %}" alt="x" target="_blank" rel="noopener noreferrer"></a>
+            <a href="#" ><img class="sm-img" src="{% static 'landing/img/ig_logo.png' %}" alt="instagram" target="_blank" rel="noopener noreferrer"></a>
+            <a href="#" ><img class="sm-img" src="{% static 'landing/img/tiktok_logo.png' %}" alt="tiktok" target="_blank" rel="noopener noreferrer"></a>
+            <a href="#" ><img class="sm-img" src="{% static 'landing/img/fb_logo.png' %}" alt="facebook" target="_blank" rel="noopener noreferrer"></a>
+            <a href="#" ><img class="sm-img" src="{% static 'landing/img/linkedin_logo.png' %}" alt="linkedin" target="_blank" rel="noopener noreferrer"></a>
+          </div>
+        </div>
+      </div>
+      <div class="container-plus">
+        <div class="container-plus-text">
+          <p class="plus-cpt">+3</p>
+          <p class="text-cpt">Años desarrollando</p>
+        </div>
+        <div class="container-plus-text">
+          <p class="plus-cpt">+10</p>
+          <p class="text-cpt">Proyectos creados</p>
+        </div>
+        <div class="container-plus-text">
+          <p class="plus-cpt">+100</p>
+          <p class="text-cpt">Puntos de motivación</p>
+        </div>
+      </div>
+    </div>
+    
   </header>
   <main id="app">
 
@@ -21,5 +63,17 @@
     {% endblock %}
     
   </main>
+  <footer class="footer">
+    <img src="{% static 'landing/img/avatar.png' %}" alt="avatar" class="logo-footer">
+    <div class="line-one">
+      <p class="copy">©</p>
+      <p class="line-footer-text">2022-2025 <span>JuserDev</span> by <span>Sebastian Rodriguez</span> v1.</p>
+    </div>
+    <p class="line-footer-text">Building websites and digital experiences from Colombia</p>
+    <a href="https://github.com/juserdev" target="_blank" rel="noopener noreferrer">
+      <img src="{% static 'landing/img/github_logo.png' %}" alt="gh-logo" class="gh-logo-footer">
+    </a>
+  </footer>
+  <script src="{% static 'landing/js/diploma.js' %}"></script>
 </body>
 </html>
