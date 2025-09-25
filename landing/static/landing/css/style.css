@@ -107,7 +107,7 @@ a{
   border-bottom: 1px dotted var(--background-texture-color);
 }
 
-.juserdev-title {
+.juserdev-title{
   color: var(--principal-text, #2C2C54);
   text-shadow:
     1px 0 var(--acent-text, #9A1750),
