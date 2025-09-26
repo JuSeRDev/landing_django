@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="{% static 'css/style.css' %}">
   <link rel="stylesheet" href="{% static 'css/diplomas.css' %}">
   <link rel="stylesheet" href="{% static 'css/gestor.css' %}">
+  <link rel="stylesheet" href="{% static 'css/cv.css' %}">
   <title>JuserDev</title>
 </head>
 <body>
@@ -74,6 +75,6 @@
       <img src="{% static 'img/github_logo.png' %}" alt="gh-logo" class="gh-logo-footer">
     </a>
   </footer>
-  <script src="{% static 'js/diploma.js' %}"></script>
+  {% block script_js %}{% endblock %}
 </body>
 </html>
