@@ -1,0 +1,76 @@
+p{
+  color: var(--principal-text);
+}
+
+.cv_download{
+  padding: 10px 0;
+}
+
+.cv_download a{
+  color: var(--accent-text);
+  font-weight: 700;
+}
+  
+
+.cv-container{
+  width: 510px;
+}
+
+.cv-name{
+  padding: 10px 0 5px;
+  font-size: 30.9px;
+  text-align: center;
+}
+
+.cv-name, .cv_title{
+  color: var(--titles-color);
+  text-shadow:
+    2px 0 var(--title-stroke),
+    -2px 0 var(--title-stroke),
+    0 2px var(--title-stroke),
+    0 -2px var(--title-stroke),
+    2px 2px var(--title-stroke),
+    -2px -2px var(--title-stroke),
+    2px -2px var(--title-stroke),
+    -2px 2px var(--title-stroke);
+}
+
+.cv_info_name_container{
+  border-bottom: 2px solid var(--principal-text);
+  padding: 5px;
+}
+
+.cv_info_name{
+  text-align: center;
+}
+
+.cv_description{
+  padding-top: 25px;
+}
+
+.cv_title{
+  border-bottom: 2px solid var(--principal-text);
+  padding: 25px 0 5px;
+}
+
+.cv_subtitle{
+  padding: 20px 0 15px;
+ color: var(--subtitle-color);
+  text-shadow:
+    1px 0 var(--subtitle-stroke),
+    -1px 0 var(--subtitle-stroke),
+    0 1px var(--subtitle-stroke),
+    0 -1px var(--subtitle-stroke),
+    1px 1px var(--subtitle-stroke),
+    -1px -1px var(--subtitle-stroke),
+    1px -1px var(--subtitle-stroke),
+    -1px 1px var(--subtitle-stroke);
+}
+
+.cv_list{
+  padding-left: 20px;
+}
+
+.cv_list_skills{
+  padding-top: 20px;
+}
