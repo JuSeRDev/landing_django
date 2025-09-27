@@ -25,7 +25,15 @@ SECRET_KEY = 'django-insecure-ig@d8c8%n1p(mnxyrzp*#l_u(th)s+*@eqaoc85m!$@1q-2e=6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get("DEBUG", "True") == "True"
 
-ALLOWED_HOSTS = ["*"]
+# Hosts y CSRF confiables basados en Render
+RENDER_EXTERNAL_HOSTNAME = os.environ.get("RENDER_EXTERNAL_HOSTNAME")
+if RENDER_EXTERNAL_HOSTNAME:
+    ALLOWED_HOSTS = [RENDER_EXTERNAL_HOSTNAME]
+    CSRF_TRUSTED_ORIGINS = [f"https://{RENDER_EXTERNAL_HOSTNAME}"]
+else:
+    # Desarrollo local
+    ALLOWED_HOSTS = ["*"]
+    CSRF_TRUSTED_ORIGINS = []
 
 
 # Application definition
@@ -50,6 +58,9 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+# Asegura que Django detecte correctamente HTTPS detrás del proxy de Render
+SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 
 ROOT_URLCONF = 'juserdev.urls'
 
