@@ -1,0 +1,1 @@
+web: gunicorn juserdev.wsgi:application

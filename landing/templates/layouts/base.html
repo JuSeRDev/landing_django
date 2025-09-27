@@ -5,23 +5,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="{% static 'landing/img/favicon.png' %}">
-  <link rel="stylesheet" href="{% static 'landing/css/style.css' %}">
-  <link rel="stylesheet" href="{% static 'landing/css/diplomas.css' %}">
-  <link rel="stylesheet" href="{% static 'landing/css/gestor.css' %}">
+  <link rel="icon" type="image/png" href="{% static 'img/favicon.png' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/diplomas.css' %}">
+  <link rel="stylesheet" href="{% static 'css/gestor.css' %}">
+  <link rel="stylesheet" href="{% static 'css/cv.css' %}">
   <title>JuserDev</title>
 </head>
 <body>
   <header>
     <div class="header-bar">
-      <a href="{% url 'home' %}"><img src="{% static 'landing/img/juserdev.png' %}" alt="juserdev-logo" class="juserdev-logo"></a>
+      <a href="{% url 'home' %}"><h1 class="juserdev-title">juserdev</h1></a>
     </div>
 
     <div class="container-user">
       <div class="container-user-info">
         <div class="container-imgs">
           <div class="img">
-            <img src="{% static 'landing/img/avatar.png' %}" alt="avatar" class="avatar">
+            <img src="{% static 'img/avatar.png' %}" alt="avatar" class="avatar">
           </div>
         </div>
         <div class="user-info">
@@ -31,28 +32,19 @@
             <p class="user">@juserdev</p>
           </div>
           <div class="container-sm">
-            <a href="#" ><img class="sm-img" src="{% static 'landing/img/github_logo.png' %}" alt="github" target="_blank" rel="noopener noreferrer"></a>
-            <a href="#" ><img class="sm-img" src="{% static '/landing/img/x_logo.png' %}" alt="x" target="_blank" rel="noopener noreferrer"></a>
-            <a href="#" ><img class="sm-img" src="{% static 'landing/img/ig_logo.png' %}" alt="instagram" target="_blank" rel="noopener noreferrer"></a>
-            <a href="#" ><img class="sm-img" src="{% static 'landing/img/tiktok_logo.png' %}" alt="tiktok" target="_blank" rel="noopener noreferrer"></a>
-            <a href="#" ><img class="sm-img" src="{% static 'landing/img/fb_logo.png' %}" alt="facebook" target="_blank" rel="noopener noreferrer"></a>
-            <a href="#" ><img class="sm-img" src="{% static 'landing/img/linkedin_logo.png' %}" alt="linkedin" target="_blank" rel="noopener noreferrer"></a>
+            <a href="https://github.com/JuSeRDev" ><img class="sm-img" src="{% static 'img/github_logo.png' %}" alt="github" target="_blank" rel="noopener noreferrer"></a>
+            <a href="https://x.com/juserdev" ><img class="sm-img" src="{% static 'img/x_logo.png' %}" alt="x" target="_blank" rel="noopener noreferrer"></a>
+            <a href="https://www.instagram.com/juserdev/" ><img class="sm-img" src="{% static 'img/ig_logo.png' %}" alt="instagram" target="_blank" rel="noopener noreferrer"></a>
+            <a href="https://www.tiktok.com/@juserdev" ><img class="sm-img" src="{% static 'img/tiktok_logo.png' %}" alt="tiktok" target="_blank" rel="noopener noreferrer"></a>
+            <a href="https://www.facebook.com/profile.php?id=61581654262182" ><img class="sm-img" src="{% static 'img/fb_logo.png' %}" alt="facebook" target="_blank" rel="noopener noreferrer"></a>
+            <a href="https://www.linkedin.com/in/jserodriguezr/" ><img class="sm-img" src="{% static 'img/linkedin_logo.png' %}" alt="linkedin" target="_blank" rel="noopener noreferrer"></a>
           </div>
         </div>
       </div>
-      <div class="container-plus">
-        <div class="container-plus-text">
-          <p class="plus-cpt">+3</p>
-          <p class="text-cpt">Años desarrollando</p>
-        </div>
-        <div class="container-plus-text">
-          <p class="plus-cpt">+10</p>
-          <p class="text-cpt">Proyectos creados</p>
-        </div>
-        <div class="container-plus-text">
-          <p class="plus-cpt">+100</p>
-          <p class="text-cpt">Puntos de motivación</p>
-        </div>
+      <div class="container-plus">         
+          <p class="text-cpt"><span class="plus-cpt">+3</span> Años desarrollando</p>
+          <p class="text-cpt"><span class="plus-cpt">+10</span> Proyectos creados</p>
+          <p class="text-cpt"><span class="plus-cpt">+100</span> Puntos de motivación</p>
       </div>
     </div>
     
@@ -63,17 +55,19 @@
     {% endblock %}
     
   </main>
-  <footer class="footer">
-    <img src="{% static 'landing/img/avatar.png' %}" alt="avatar" class="logo-footer">
-    <div class="line-one">
-      <p class="copy">©</p>
-      <p class="line-footer-text">2022-2025 <span>JuserDev</span> by <span>Sebastian Rodriguez</span> v1.</p>
+  <footer>
+    <div class="footer">
+      <img src="{% static 'img/avatar.png' %}" alt="avatar" class="logo-footer">
+      <div class="line-one">
+        <p class="copy">©</p>
+        <p class="line-footer-text">2022-2025 <span>JuserDev</span> by <span>Sebastian Rodriguez</span> v1.</p>
+      </div>
+      <p class="line-footer-text">Building websites and digital experiences from Colombia</p>
+      <a href="https://github.com/JuSeRDev/landing_django.git" target="_blank" rel="noopener noreferrer">
+        <img src="{% static 'img/github_logo.png' %}" alt="gh-logo" class="gh-logo-footer">
+      </a>
     </div>
-    <p class="line-footer-text">Building websites and digital experiences from Colombia</p>
-    <a href="https://github.com/juserdev" target="_blank" rel="noopener noreferrer">
-      <img src="{% static 'landing/img/github_logo.png' %}" alt="gh-logo" class="gh-logo-footer">
-    </a>
   </footer>
-  <script src="{% static 'landing/js/diploma.js' %}"></script>
+  {% block script_js %}{% endblock %}
 </body>
 </html>

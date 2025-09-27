@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: juserdev-django
+    env: python
+    buildCommand: |
+      pip install --upgrade pip
+      pip install -r requirements.txt
+      python manage.py collectstatic --noinput
+    startCommand: gunicorn juserdev.wsgi:application
+    autoDeploy: true

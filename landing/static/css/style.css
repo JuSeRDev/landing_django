@@ -95,9 +95,6 @@ a{
 
 .header-bar{
   background-color: var(--background-color);
-  /* background-color: var(--background-color-transparent);
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(3px); */
   padding: 11px 50px;
   position: fixed;
   top: 0;
@@ -107,11 +104,27 @@ a{
   border-bottom: 1px dotted var(--background-texture-color);
 }
 
-.juserdev-logo{
-  width: 150px;
+header{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.juserdev-title{
+  color: var(--principal-text, #2C2C54);
+  text-shadow:
+    1px 0 var(--acent-text, #9A1750),
+    -1px 0 var(--acent-text, #9A1750),
+    0 1px var(--acent-text, #9A1750),
+    0 -1px var(--acent-text, #9A1750),
+    1px 1px var(--acent-text, #9A1750),
+    -1px -1px var(--acent-text, #9A1750),
+    1px -1px var(--acent-text, #9A1750),
+    -1px 1px var(--acent-text, #9A1750);
 }
 
 .container-user{
+  width: 510px;
   padding: 100px 0 0;
   display: flex;
   flex-direction: column;
@@ -167,7 +180,7 @@ a{
   display: flex;
   gap: 16px;
   position: relative;
-  width: 510px;
+  width: 100%;
 }
 
 .container-imgs{
@@ -220,24 +233,22 @@ a{
 
 .container-plus{
   display: flex;
-  width: 510px;
+  width: 100%;
   justify-content: space-between;
   font-size: 12px;
   padding: 25px 0;
 }
 
-.container-plus-text{
-  display: flex;
-  gap: 5px;
+.text-cpt{
+  color: var(--principal-text);
+  width: fit-content;
+  font-size: 12px;
 }
 
 .plus-cpt{
   color: var(--acent-text);
   font-weight: 700;
-}
-
-.text-cpt{
-  color: var(--principal-text);
+  font-size: 14px;
 }
 
 .description{
@@ -272,7 +283,8 @@ a{
 }
 
 .project-img, .img-formation, .img-contact{
-  width: 60px;
+  width: 61px;
+  height: 61px;
 }
 
 .container-projects, .container-formations, .container-contacts{
@@ -305,6 +317,7 @@ a{
   border: 2px solid var(--acent-text);
   padding: 10px;
   display: flex;
+  align-items: center;
   gap: 10px;
   cursor: pointer;
 }
@@ -509,8 +522,14 @@ p.skills-message{
 /* ------------------- FOOTER ------------------- */
 
 footer{
-  padding-bottom: 20px;
   width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer{
+  padding-bottom: 20px;
+  width: 510px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -550,3 +569,91 @@ span{
 
 
 /* ------------------- END FOOTER ------------------- */
+
+@media (width <= 510px){
+  .header-bar{
+    padding: 5px 20px;
+  }
+
+  .juserdev-title{
+    font-size: 22px;
+    text-shadow:
+      0.5px 0 var(--acent-text, #9A1750),
+      -0.5px 0 var(--acent-text, #9A1750),
+      0 0.5px var(--acent-text, #9A1750),
+      0 -0.5px var(--acent-text, #9A1750),
+      0.5px 0.5px var(--acent-text, #9A1750),
+      -0.5px -0.5px var(--acent-text, #9A1750),
+      0.5px -0.5px var(--acent-text, #9A1750),
+      -0.5px 0.5px var(--acent-text, #9A1750);
+  }
+  
+  .container-user{
+    width: 93%;
+  }  
+
+  .text-cpt{
+    font-size: 11px;
+    width: 80px;
+  }
+  
+  .plus-cpt{
+    font-size: 12px;
+  }
+
+  .container{
+    width: 93%;
+    /* max-width: 300px; */
+  }
+
+  .menu-titles{
+    font-size: 24px;
+    text-shadow:
+    1px 0 var(--title-stroke),
+    -1px 0 var(--title-stroke),
+    0 1px var(--title-stroke),
+    0 -1px var(--title-stroke),
+    1px 1px var(--title-stroke),
+    -1px -1px var(--title-stroke),
+    1px -1px var(--title-stroke),
+    -1px 1px var(--title-stroke);
+  }
+
+  .container-project-shadow, .container-project{
+    height: auto;
+  }
+
+  .container-skills{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .container-skill{
+    width: 55px;
+    height: 55px;
+  }
+
+  .container-skill-shadow{
+    width: 55px;
+    height: 55px;
+  }
+
+  .skill-title{
+    font-size: 12px;
+  }
+
+  .container-contacts{
+    flex-direction: column;
+  }
+
+  .container-contact-shadow{
+    width: 100%;
+  }
+
+  .footer{
+    width: 93%;
+    text-align: center;
+    font-size: 10px;
+  }
+}
