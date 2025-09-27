@@ -1,9 +1,32 @@
 <div align="center">
 
-<h1>JuserDev · Portafolio y Landing</h1>
+<img src="landing/static/img/avatar.png" alt="Avatar JuserDev" width="96" style="border-radius: 8px; border: 1px solid #ddd;" />
+
+<h1 style="margin: 10px 0 0;">JuserDev · Portafolio y Landing</h1>
+
+<p style="max-width: 700px;">
+  Una experiencia web con estética retro‑pixel inspirada en videojuegos clásicos: títulos con contorno, tarjetas con "sombra presionable" y una textura cálida de papel que acompaña todo el recorrido.
+</p>
 
 <p>
-  Una experiencia web con estética retro-pixel inspirada en videojuegos clásicos: títulos con contorno, tarjetas con "sombra presionable" y una textura cálida de papel que acompaña todo el recorrido.
+  <a href="https://github.com/juserdev" title="GitHub" target="_blank" style="margin:0 6px;">
+    <img src="landing/static/img/github_logo.png" alt="GitHub" width="20" height="20" style="vertical-align:middle;" />
+  </a>
+  <a href="https://x.com/juserdev" title="X" target="_blank" style="margin:0 6px;">
+    <img src="landing/static/img/x_logo.png" alt="X" width="20" height="20" style="vertical-align:middle;" />
+  </a>
+  <a href="https://instagram.com/juserdev" title="Instagram" target="_blank" style="margin:0 6px;">
+    <img src="landing/static/img/ig_logo.png" alt="Instagram" width="20" height="20" style="vertical-align:middle;" />
+  </a>
+  <a href="https://www.tiktok.com/@juserdev" title="TikTok" target="_blank" style="margin:0 6px;">
+    <img src="landing/static/img/tiktok_logo.png" alt="TikTok" width="20" height="20" style="vertical-align:middle;" />
+  </a>
+  <a href="https://facebook.com/juserdev" title="Facebook" target="_blank" style="margin:0 6px;">
+    <img src="landing/static/img/fb_logo.png" alt="Facebook" width="20" height="20" style="vertical-align:middle;" />
+  </a>
+  <a href="https://www.linkedin.com/in/juserdev" title="LinkedIn" target="_blank" style="margin:0 6px;">
+    <img src="landing/static/img/linkedin_logo.png" alt="LinkedIn" width="20" height="20" style="vertical-align:middle;" />
+  </a>
 </p>
 
 </div>
@@ -53,34 +76,26 @@ La idea es simple: mostrar lo esencial con personalidad. No verás fuegos artifi
 
 ---
 
-## Paleta de colores
+## Colores: decisiones clave
 
-<table>
-  <tr>
-    <td align="center"><strong>Fondo</strong><br/><div style="width:100px;height:24px;background:#D3C4AC;border:1px solid #ccc"></div><code>#D3C4AC</code></td>
-    <td align="center"><strong>Textura</strong><br/><div style="width:100px;height:24px;background:#BDB2A2;border:1px solid #ccc"></div><code>#BDB2A2</code></td>
-    <td align="center"><strong>Texto</strong><br/><div style="width:100px;height:24px;background:#2C2C54;border:1px solid #ccc"></div><code>#2C2C54</code></td>
-    <td align="center"><strong>Acento</strong><br/><div style="width:100px;height:24px;background:#9A1750;border:1px solid #ccc"></div><code>#9A1750</code></td>
-  </tr>
-  <tr>
-    <td align="center"><strong>Título</strong><br/><div style="width:100px;height:24px;background:#FCB423;border:1px solid #ccc"></div><code>#FCB423</code></td>
-    <td align="center"><strong>Trazo título</strong><br/><div style="width:100px;height:24px;background:#000;border:1px solid #ccc"></div><code>#000000</code></td>
-    <td align="center"><strong>Subtítulo</strong><br/><div style="width:100px;height:24px;background:#FBE7B8;border:1px solid #ccc"></div><code>#FBE7B8</code></td>
-    <td align="center"><strong>Trazo subtítulo</strong><br/><div style="width:100px;height:24px;background:#34241D;border:1px solid #ccc"></div><code>#34241D</code></td>
-  </tr>
-</table>
-
-Colores por tecnología (ejemplos):
-
-- **HTML**: #E34F26
-- **CSS**: #1572B6
-- **JS**: #F7DF1E
-- **TS**: #3178C6
-- **Vite**: #646CFF
-- **Python**: #0276BC
-- **Django**: #092E20
-- **Git**: #F05032
-- **GitHub**: #181717
+- Base cálida con textura para identidad sin distracción:
+  - ![#D3C4AC](https://dummyimage.com/50x20/D3C4AC/D3C4AC.png) Fondo `#D3C4AC`
+  - ![#BDB2A2](https://dummyimage.com/50x20/BDB2A2/BDB2A2.png) Textura `#BDB2A2`
+  - ![#2C2C54](https://dummyimage.com/50x20/2C2C54/2C2C54.png) Texto principal `#2C2C54`
+  - ![#9A1750](https://dummyimage.com/50x20/9A1750/9A1750.png) Acentos `#9A1750`
+- Jerarquía y estilo arcade en titulares:
+  - ![#FCB423](https://dummyimage.com/50x20/FCB423/FCB423.png) Título `#FCB423`
+  - ![#000000](https://dummyimage.com/50x20/000000/000000.png) Trazo `#000000`
+  - ![#37241B](https://dummyimage.com/50x20/37241B/37241B.png) Sombra `#37241B`
+- Subtítulos suaves y legibles:
+  - ![#FBE7B8](https://dummyimage.com/50x20/FBE7B8/FBE7B8.png) Subtítulo `#FBE7B8`
+  - ![#34241D](https://dummyimage.com/50x20/34241D/34241D.png) Trazo subtítulo `#34241D`
+- Reconocimiento instantáneo por marca en “Skills” (ejemplos):
+  - ![#E34F26](https://dummyimage.com/50x20/E34F26/E34F26.png) HTML `#E34F26`
+  - ![#1572B6](https://dummyimage.com/50x20/1572B6/1572B6.png) CSS `#1572B6`
+  - ![#F7DF1E](https://dummyimage.com/50x20/F7DF1E/F7DF1E.png) JS `#F7DF1E`
+  - ![#0276BC](https://dummyimage.com/50x20/0276BC/0276BC.png) Python `#0276BC`
+  - ![#092E20](https://dummyimage.com/50x20/092E20/092E20.png) Django `#092E20`
 
 ---
 
