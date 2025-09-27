@@ -1,1 +1,1 @@
-web: gunicorn landing.wsgi
+web: gunicorn juserdev.wsgi:application
