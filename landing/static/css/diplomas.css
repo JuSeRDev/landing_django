@@ -60,4 +60,13 @@
   opacity: 1;
 }
 
+/* ------------------- MEDIA QUERIES ------------------- */
+
+@media (width <= 510px){
+  .container-diplomas{
+    width: 93%;
+  }
+}
+
+
 
