@@ -74,3 +74,28 @@ p{
 .cv_list_skills{
   padding-top: 20px;
 }
+
+/* ------------------- MEDIA QUERIES ------------------- */
+
+@media (width <= 510px){
+  .cv-container{
+    width: 93%;
+  }
+
+  .cv_title{
+    font-size: 24px;
+    text-shadow:
+    1px 0 var(--title-stroke),
+    -1px 0 var(--title-stroke),
+    0 1px var(--title-stroke),
+    0 -1px var(--title-stroke),
+    1px 1px var(--title-stroke),
+    -1px -1px var(--title-stroke),
+    1px -1px var(--title-stroke),
+    -1px 1px var(--title-stroke);
+  }
+
+  .cv_subtitle{
+    font-size: 16px;
+  }
+}

@@ -95,9 +95,6 @@ a{
 
 .header-bar{
   background-color: var(--background-color);
-  /* background-color: var(--background-color-transparent);
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(3px); */
   padding: 11px 50px;
   position: fixed;
   top: 0;
@@ -574,6 +571,23 @@ span{
 /* ------------------- END FOOTER ------------------- */
 
 @media (width <= 510px){
+  .header-bar{
+    padding: 5px 20px;
+  }
+
+  .juserdev-title{
+    font-size: 22px;
+    text-shadow:
+      0.5px 0 var(--acent-text, #9A1750),
+      -0.5px 0 var(--acent-text, #9A1750),
+      0 0.5px var(--acent-text, #9A1750),
+      0 -0.5px var(--acent-text, #9A1750),
+      0.5px 0.5px var(--acent-text, #9A1750),
+      -0.5px -0.5px var(--acent-text, #9A1750),
+      0.5px -0.5px var(--acent-text, #9A1750),
+      -0.5px 0.5px var(--acent-text, #9A1750);
+  }
+  
   .container-user{
     width: 93%;
   }  

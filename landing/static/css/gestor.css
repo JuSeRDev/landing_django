@@ -28,3 +28,13 @@
   color: var(--acent-text);
   font-weight: 600;
 }
+
+@media (width <= 510px){
+  .gestor-container{
+    width: 93%;
+  }
+
+  .video-iframe{
+    max-height: 300px;
+  }
+}
