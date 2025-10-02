@@ -1,4 +1,4 @@
-p{
+.cv_item, .cv_text, .cv_description, .cv_download, .cv_info_name_container{
   color: var(--principal-text);
 }
 
